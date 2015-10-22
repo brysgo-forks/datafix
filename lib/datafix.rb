@@ -24,7 +24,7 @@ class Datafix
       execute(<<-SQL)
       INSERT INTO datafix_log
       (direction, script, timestamp)
-      VALUES ('#{direction}', '#{name.camelize}', CURRENT_TIMESTAMP))
+      VALUES ('#{direction}', '#{name.camelize}', TIMESTAMP))
       SQL
     end
 
